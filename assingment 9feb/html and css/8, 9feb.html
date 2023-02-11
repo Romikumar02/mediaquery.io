@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /* Screen size 
+        -Larger screen: 1440px;
+        -Normal Screen: 1024px;
+        -Tablet screen: 768px;
+        -Mobile Screen: 425px;
+        */
+        .box{display: none;
+
+        }
+        
+            
+        @media(max-width:425px) { .box1{
+
+            display:block;
+        }
+            
+        }
+        @media(max-width:768px) and (min-width:425px) { .box2{
+
+            display:block;
+        }
+            
+        }
+        @media(max-width:1024px)  and (min-width:768px){ .box3{
+
+            display:block;
+        }
+            
+        }
+        @media (min-width:1024px) { .box4{
+
+            display:block;
+        }
+            
+        }
+        
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 4px;
+        }
+        .box1{
+            background-color: red;
+
+        }
+        .box2{
+            background-color: blue;
+        }
+        .box3{
+            background-color: yellow;
+
+        }
+        .box3{
+            background-color: black;
+        }
+        .box4{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+   
+        <div class="box box1">
+            This is a Mobile screen 425px
+        </div>
+        <div class="box box2"> -Tablet screen: 768px</div>
+        <div class="box box3">
+        -Normal Screen: 1024px;
+
+        </div>
+        <div class="box box4">-Larger screen: 1440px;</div>
+  
+
+    
+</body>
+</html>
